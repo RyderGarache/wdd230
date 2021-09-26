@@ -2,72 +2,77 @@
     box-sizing: border-box;
 }
 
-:root{
-    --gradient: linear-gradient(90deg, #eb553b, #dd8d7a, #b16d64);
-    --color1: #00B0F0;
-    --color2: #00E5DC;
-    --color3: #7EF9C1;
-    --fontcolor: #182F2C;
+main section img{
+    width: 100%;
 }
-body{
-    max-width: 980px;
-    margin: 0 auto;
-    background-color: #c5c5cc;
-}
-h1, 
-h2,
-h3{
-    font-family: 'DM Serif Display', serif;
-    font-weight: bolder;
-    color: var(--fontcolor);
-}
-footer,
-header{
-    background-image: var(--gradient);
-    color: var(--fontcolor);
-    text-align: center;
-    padding: .5rem;
-    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
-}
-header h2{
-    margin-top: -.5rem;
-}
+
 main section{
     width: 300px;
-    color: var(--fontcolor);
-    background-color: var(--color3);
-    margin: .5rem auto;
-    padding: .75rem;
+    color: #182F2C;
+    background-color: rgb(235, 111, 111);
+    margin: .7rem auto;
+    padding: 1rem;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
     text-align: center;
 }
-main section img{
-    width: 100%;
+
+body{
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: #9999bd;
 }
+h1, 
+h2,
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: #182F2C;
+}
+
+header h2{
+    margin-top: -.5rem;
+}
+
+
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
     padding: 2px;
-    color: var(--fontcolor);
+    color:white;
 }
 section h2{
     border-bottom: 2px solid #182F2C;
     padding-bottom: 5px;
 }
 section h3{
-    text-align: left;
+    text-align: justify;
     margin-bottom: -13px;
 }
 a{
-    text-decoration: none;
-    color: var(--fontcolor);
+    color: #182F2C;
 }
 a:hover{
-    background-color: var(--color1);
+    background-color: #f08000;
     color: white;
 }
 
-*{
-    box-sizing: border-box;
+footer,
+header{
+    background-color: #d8631f;
+    background-image: rgb(136, 94, 17);
+    color: #182F2C;
+    text-align: center;
+    padding: .5rem;
+    margin-top: .8em;
+    margin-bottom: .5em;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    border-radius: 10px 10px 10px 10px;
 }
+/* :root{
+    --gradient: linear-gradient(90deg, #eb553b, #dd8d7a, #b16d64);
+    --color1: #f08000;
+    --color2: #e5bb00;
+    --color3: #d89e1f;
+    --fontcolor: #182F2C;
+} */
