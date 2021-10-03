@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 110px;
+    padding: 10px;
+}
+body{
+    max-width: 980px;
+    margin: 5% auto;
+    
+}
+footer,
+header{
+    background: rgba(18, 205, 238, 0.911);
+    color: black;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    overflow: auto;
+    padding: 2rem;
+}
+h1, 
+h2,
+h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+p{
+    font-family: 'Inconsolata', monospace;
+    padding: 20px;
+    margin-top: -20px;
+    font-weight: 400;
+    line-height: 1.5em;
+  
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(34, 179, 136);
+
+}
+nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0.5rem;
+	text-decoration: none;
+	font-size: 1rem;
+    background-image:  rgb(66, 66, 211);
+}
+nav a:hover {
+	color: white;
+    background: var(--color1);
+    
+}
+nav{
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    border-left: 4px solid rgb(255, 255, 255);
+}
+.online {
+	color: rgb(238, 204, 9);
+}
+h2,
+h3{
+    padding: 20px;
+}
+main{
+    margin-top: -20px;
+    margin-bottom: -10px;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    border-left: 4px solid rgba(255, 255, 255, .7);
+    display: flex;
+    display: block;
+}
+header{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+footer{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Quicksand', sans-serif;
+    margin-top:-15px;
+}
+h3{
+    margin-top: -20px;
+}
+
+.colors td{
+    width: 25%;
+    height: 3em;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+  }
+.colors{
+      margin: 20px;
+      color: var(--fontcolor);
+      
+  }
+.primary{
+    background-color: var(--color1);
+}
+.secondary{
+    background-color: var(--color2);
+}
+.accent1{
+    background-color: var(--color3);
+}
+.accent2{
+    background-color: var(--fontcolor);
+    color: white;
+}
+ul li{
+    list-style-type: none;
+}
+main ul li{
+    font-family: 'Merriweather', serif; 
+}
+main ul li img{
+    margin: 20px 0;
+}
+.logoimg{
+    width: 110px;
+    padding: 20px;
+}
+.logoimg{
+    margin-top: -20px;
+}
