@@ -35,6 +35,11 @@ p{
     line-height: 1.5em;
   
 }
+
+nav{
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    }
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -43,27 +48,23 @@ nav ul {
     font-weight: 600;
     font-size: 1.5rem;
     font-family: 'Quicksand', sans-serif;
-    background-color: rgb(34, 179, 136);
+    }
 
-}
 nav ul li a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 0.5rem;
 	text-decoration: none;
-	font-size: 1rem;
-    background-image:  rgb(66, 66, 211);
+	font-size: 1.5rem;
+    background:  rgb(66, 66, 211);
 }
 nav a:hover {
 	color: white;
-    background: var(--color1);
+    background: rgb(224, 147, 3);
     
 }
-nav{
-    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
-    border-left: 4px solid rgb(255, 255, 255);
-}
+
 .online {
 	color: rgb(238, 204, 9);
 }
@@ -75,17 +76,17 @@ main{
     margin-top: -20px;
     margin-bottom: -10px;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
-    border-left: 4px solid rgba(255, 255, 255, .7);
+    /* border-left: 4px solid rgba(255, 255, 255, .7); */
     display: flex;
     display: block;
 }
 header{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     }
 footer{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     font-family: 'Quicksand', sans-serif;
     margin-top:-15px;
@@ -102,27 +103,27 @@ h3{
   }
 .colors{
       margin: 20px;
-      color: var(--fontcolor);
+      color: black;
       
   }
 .primary{
-    background-color: var(--color1);
+    background-color: rgba(18, 205, 238, 0.911);
 }
 .secondary{
-    background-color: var(--color2);
+    background-color:  rgb(66, 66, 211);
 }
 .accent1{
-    background-color: var(--color3);
+    background-color:  rgb(224, 147, 3);
 }
 .accent2{
-    background-color: var(--fontcolor);
+    background-color: black;
     color: white;
 }
 ul li{
     list-style-type: none;
 }
 main ul li{
-    font-family: 'Merriweather', serif; 
+    font-family: 'Quicksand', sans-serif; 
 }
 main ul li img{
     margin: 20px 0;
@@ -130,7 +131,5 @@ main ul li img{
 .logoimg{
     width: 110px;
     padding: 20px;
-}
-.logoimg{
     margin-top: -20px;
 }
