@@ -84,10 +84,6 @@
         height: 300px;
         background-color: rgb(113, 165, 145);
     }
-    /* .info li a img{
-        width: 20px;
-        height: 20px; */
-    }
     .map{
         grid-column: 1/2;
         grid-row: 1/2;

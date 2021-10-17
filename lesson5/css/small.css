@@ -223,7 +223,7 @@ footer{
     .info{
         list-style: none;
         background: rgb(113, 165, 145);
-        height: 300px;
+        height: 180px;
     }
     .info li a img{
         width: 30px;
@@ -236,8 +236,7 @@ footer{
 
     .map img{
         max-width: 100%;
-        width: 100%;
-        
+        width: 100%;        
     }
     .info h2{
         margin: 1px;
