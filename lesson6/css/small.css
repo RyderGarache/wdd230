@@ -220,17 +220,18 @@ footer{
     	background-color:rgb(104 169 181 / 91%)
     }
 
-    .info{
+    .info {
         list-style: none;
         background: rgb(113, 165, 145);
         height: 180px;
     }
-    .info li a img{
+    .info ol li a img{
         width: 30px;
         height: 30px;
         padding: .1em;
     }
-    .info li{
+    .info ol li{
+        list-style: none;
         padding: 5px;
     }
 
