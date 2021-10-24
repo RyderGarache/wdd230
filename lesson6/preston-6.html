@@ -50,7 +50,13 @@
     <main>
         <h2 class="preston">Preston Idaho</h2>
         <div class="herodiv">
-            <img class="hero_img" src="image/pexels-andrew-beatson-3742711.jpg" alt="Heroimg">
+            <picture>
+                <source media="(max-width: 400px)" srcset="image\topimage-400px.jpg">
+                <source media="(max-width: 600px)" srcset="image\topimage-600px.jpg">
+                <source media="(max-width: 800px)" srcset="image\topimage-980px.jpg">
+                <img class="hero_img" src="image/topimage-980px.jpg" alt="Heroimg">   
+            </picture>
+            
             <section class="stats">
                 <h2>Weather Summary</h2>
                 <p>Currently:</p>
