@@ -1,0 +1,48 @@
+html {
+    background-color: #eee6e6;
+    text-align: center;
+    
+}
+
+#content {
+    max-width: 640px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 3.5em
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, a:visited, a:hover {
+
+    color: #7c5454;
+    transition: 0.5s;
+}
+
+a:hover {
+    color:skyblue;
+    transition: 0.5s;
+}
+
+img {
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.skydiving {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.skydiving img[data-src] {
+    filter: blur(.2em);
+}
+
+.skydiving img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
