@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Weather Site Plan of Ryder Garache for WDD 230: Web Frontend Develoment.">
-    <title>WDD230 Weekly Assignment: Site Plan</title>
+    <meta name="description" content="Gallery Site of Ryder Garache for WDD 230: Web Frontend Develoment.">
+    <title>ClimaTime Gallery</title>
     <link rel="shortcut icon" href="image/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/script.js"></script>
     <script defer src="js/windchill.js"></script>
+    <script defer src="js/lazy.js"></script>
 </head>
 
 <body>
@@ -43,34 +44,88 @@
         <ul class="navigation">
             <li><a class="menu" href="#">Menu</a></li>
             <li><a href="">Home</a></li>
-            <li><a href="preston-5.html">Preston</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
             <li><a href="">Soda Springs</a></li>
             <li><a href="">Storm Center</a></li>
-            <li><a class="online"href="">Gallery</a></li>
+            <li><a class="online" href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
     
-        <div class="skydiving">
-            <picture>
-                <img src="image/placeholder.svg" data-src="images/sky-1.jpg" alt="skydiving">
+        <div class="weather">
+            <picture class="number1">
+                <source media="(max-width: 480px)" srcset="image/weather-1-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-1-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-1-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-1-large.jpg" alt="weather">
+                <figcaption>Sunset</figcaption>
+            </picture>
+
+            <picture class="number2">
+                <source media="(max-width: 480px)" srcset="image/weather-2-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-2-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-2-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-2-large.jpg" alt="weather">
+                <figcaption>Hurricane</figcaption>
+            </picture>
+
+            <picture class="number3">
+                <source media="(max-width: 480px)" srcset="image/weather-3-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-3-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-3-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-3-large.jpg" alt="weather">
+                <figcaption>Rainbow</figcaption>
+            </picture>
+
+            <picture class="number4">
+                <source media="(max-width: 480px)" srcset="image/weather-4-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-4-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-4-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-4-large.jpg" alt="weather">
+                <figcaption>Perfect Weather</figcaption>
+            </picture>
+
+            <picture class="number5">
+                <source media="(max-width: 480px)" srcset="image/weather-5-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-5-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-5-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-5-large.jpg" alt="weather">
+                <figcaption>Foggy</figcaption>
+            </picture>
+
+            <picture class="number6">
+                <source media="(max-width: 480px)" srcset="image/weather-6-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-6-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-6-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-6-large.jpg" alt="weather">
+                <figcaption>Storn</figcaption>
+            </picture>
+
+            <picture class="number7">
+                <source media="(max-width: 480px)" srcset="image/weather-7-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-7-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-7-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-7-large.jpg" alt="weather">
+                <figcaption>Electrical Storn</figcaption>
+            </picture>
+
+            <picture class="number8">
+                <source media="(max-width: 480px)" srcset="image/weather-8-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-8-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-8-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-8-large.jpg" alt="weather">
+                <figcaption>Tornado</figcaption>
+            </picture>
+
+            <picture class="number9">
+                <source media="(max-width: 480px)" srcset="image/weather-9-small.jpg">
+                <source media="(max-width: 720px)" srcset="image/weather-9-medium.jpg">
+                <source media="(max-width: 1500px)" srcset="image/weather-9-large.jpg">
+                <img class="gallery" src="image/placeholder.png" data-src="images/weather-9-large.jpg" alt="weather">
+                <figcaption>Rainy</figcaption>
             </picture>
     
-            <picture>
-                <img src="image/placeholder.svg" data-src="images/sky-2.jpg" alt="skydiving">
-            </picture>
-    
-            <picture>
-                <img src="image/placeholder.svg" data-src="images/sky-3.jpg" alt="skydiving">
-            </picture>
-    
-            <picture>
-                <img src="image/placeholder.svg" data-src="images/sky-4.jpg" alt="skydiving">
-            </picture>
-    
-            <picture>
-                <img src="image/placeholder.svg" data-src="images/sky-5.jpg" alt="skydiving">
-            </picture>
+            
     
         </div>
     </main>

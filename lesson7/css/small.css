@@ -51,7 +51,7 @@ body{
 
 body{
     max-width: 980px;
-    margin: 5% auto;
+    margin: 2% auto;
     background-color: antiquewhite;
     
 }
@@ -142,8 +142,8 @@ nav a:hover {
 
 main{
     max-width: 9800px;
-    margin-top: -20px;
-    margin-bottom: -10px;
+    /* margin-top: -20px;
+    margin-bottom: -10px; */
     background-color: white;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
     display: flex;
@@ -241,4 +241,28 @@ footer{
     }
     .info h2{
         margin: 1px;
+    }
+
+
+    .gallery{
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: ;
+    }
+
+    .weather img[data-src] {
+        filter: blur(.2em);
+        /* height: 270px;
+        width: max-content; */
+    }
+
+    .weather img {
+        filter: blur(0em);
+        transition: filter 1s;
+    }
+    figcaption{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
     }
