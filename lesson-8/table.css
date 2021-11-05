@@ -28,6 +28,8 @@ table{
     margin-top: 40px;
     font-family: Ubuntu, sans-serif;
     font-size: medium;
+    box-shadow: 10px 10px 10px #628ca6;
+    margin-bottom: 20px;
    
 }
 thead tr:first-child{
