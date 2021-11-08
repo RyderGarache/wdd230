@@ -36,10 +36,11 @@ body{
 }
 
 .logo{
-    width: 180px;
+    width: 120px;
     padding: 5px;
     display: block;
     margin: auto;
+    height: 70px;
 }
 .hero_img{
     max-width: 100%;
@@ -67,7 +68,7 @@ header{
     color: black;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
-    overflow: auto;
+    /* overflow: auto; */
     padding: 2rem;
 }
 h1, 
@@ -128,7 +129,7 @@ nav a:hover {
 }
 
 .online {
-	color: rgb(238, 204, 9);
+	background-color: rgba(18, 205, 238, 0.911);
 }
 .responsive li{
     display: block;
@@ -152,8 +153,10 @@ main{
 header{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    height: 130px;
 
     }
+
 footer{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -280,17 +283,15 @@ footer{
     legend {
         font-size: 1.5rem;
         font-weight: 400;
-        margin: 0 1rem;
-        padding: 0 0.5rem;
+        
     }
 
-    label.top,
-    form div {
+    label{
         padding-top: 1rem;
         font-size: 1rem;
     }
 
-    .top input, .top select {
+    .title input, label select {
         display: block;
         border: solid 1px rgb(0, 0, 0);
         border-radius: 4px;
@@ -307,15 +308,24 @@ footer{
         background-color: rgba(18, 205, 238, 0.911);
         padding: .50rem;
         justify-self: center;
-        width: 10%;
-        font-size: 20px;
+        width: 60px;
+        font-size:small;
         margin: 10px auto 10px auto;
+        text-align: center;
+        
     }
 
-    .top input:required {
+    label input:required {
         border-right: red solid 2px;
     }
 
-    .top input:required:valid {
+    label input:required:valid {
         border-left: green solid 2px;
     }
+
+    textarea{
+        height: 4.4em;
+        width: 100%;
+    }
+
+    
