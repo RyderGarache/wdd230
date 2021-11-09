@@ -1,7 +1,5 @@
 let event1 = new Date()
-let options1 = {
-    day: "numeric",
-  };
+let options1 = {day: "numeric",};
 let date1 = event1.toLocaleDateString(undefined, options1);
 localStorage.setItem('date',date1)
 
@@ -15,5 +13,8 @@ let n2 = sessionStorage.getItem('date')
 let dif = n1-n2;
 
 function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
+    document.getElementById("value").innerHTML = rating;
 }
+
+// object.oninput = function(){myScript};
+// object.onchange = 
