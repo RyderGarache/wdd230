@@ -93,9 +93,6 @@
         grid-column: 2/3;
     }
 
-    .weather picture{
-        height: ;
-    }
     .weather{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

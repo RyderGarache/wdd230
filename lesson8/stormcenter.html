@@ -73,7 +73,7 @@
                         </datalist>
 
                     <label>Storm Severity: 
-                        <input required type="range" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <input type="range" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="value">1</span>
                     </label>
 
@@ -104,8 +104,9 @@
                         <label class="level"> <input type="radio" name="danger-level" value="no" >No</label>           
                         <label for="additional">Additional Information or comments:</label>
                         <textarea id="additional" name="additional" rows="4" cols="50" style="resize: both;"></textarea>
+                        <div class="divbutton"><button class="submitbutton" type="submit">Submit</button></div>
                 </fieldset>
-                <div align="center"><button class="submitbutton" type="submit">Submit</button></div>
+                
             </form>
             <script src="js/form.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
