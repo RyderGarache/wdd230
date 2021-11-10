@@ -272,7 +272,7 @@ footer{
     fieldset {
         display: flex;
         flex-direction: column;
-        border-radius: 2px black;
+        border-radius: 2px;
         padding: 1rem;
         background-color: antiquewhite;
         width: 90%;
