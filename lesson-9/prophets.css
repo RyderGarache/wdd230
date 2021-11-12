@@ -12,8 +12,9 @@ img {
     padding: 15px;
     background-image: -webkit-gradient(gray);
 }
-h2 {
-    font-size: 1.15rem;
+h1 {
+    font-size: 2rem;
+    text-align: center;
 }
 .cards {
     display: grid;
