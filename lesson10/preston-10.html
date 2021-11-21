@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ClimaTime Site of Ryder Garache for WDD 230: Web Frontend Develoment.">
+    <title>ClimaTime</title>
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/windchill.js"></script>
+    <script defer src="js/lazy.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner_content">
+            <div class=banner_text>
+                <strong>Reminder:</strong>"Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.       
+            </div>
+            <button class="banner_close" type="button">
+                <span class="material-icons">
+                    close
+                </span>
+            </button>
+        </div>
+    </div>
+    <header>
+        <a class="homeback" href=""><img class="logo" src="image/logo_climatime/logo_white_large.png"
+                alt="climatime logo"></a>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="online" href="preston-7.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="preston">Preston Idaho</h2>
+        <div class="herodiv">
+            <picture>
+                <source media="(max-width: 480px)" srcset="image/topimage-400px.jpg">
+                <source media="(max-width: 720px)" srcset="image/topimage-600px.jpg">
+                <source media="(max-width: 1200px)" srcset="image/topimage-980px.jpg">
+                <img class="hero_img" src="image/topimage-980px.jpg" alt="Heroimg">   
+            </picture>
+            
+            <section class="stats">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span class="currentWeather"></span></p>
+                <p id="temp">Temperature: <span class="temp"></span></p>
+                <p>Humidity: <span class="humidity"></span> </p>
+                <p id="speed">Wind Speed: <span class="windSpeed"></span> </p>
+                <p>Wind Chil: <span class="windchill"></span></p>
+            </section>
+        </div>
+        <div class="forescast">
+            <h2>5 Day Forescast</h2>
+            <div class="grid_forescast">
+            <img class="first" src="image/sol.png" alt="sunny">
+            <img class="second" src="image/cloud.png" alt="cloud">
+            <img class="thirth" src="image/storn.png" alt="storn">
+            <img class="fourth" src="image/huracano.png" alt="huracano">
+            <img class="fifth" src="image/huracano.png" alt="huracano">
+            </div>
+        </div>
+        <div class="article">
+            <h2 class="article_title">Tornado</h2>
+            <div class="tornado_grid">
+                <img class="tornado_img" src="image/tornado.jpg" alt="tornado">                
+                <p>Tornadoes demolish houses, flip cars, cross rivers, dig 3 foot (0.9 meter) trenches, and lift lightweight objects 10,000
+                feet (3048 meters) into the air. A tornado is a lethal combination of wind and power. Tornadoes touch down all over the
+                world, though most often in the United States.<br>
+                <br>
+                A tornado is often a funnel cloud—a rotating column of air— that stretches from a storm to the ground. To be a tornado
+                it must touch the ground. It can touch down for a few seconds or grind across the earth for miles. Tornadoes usually
+                last less than 10 minutes.<br>
+                <br>
+                Most tornadoes start from a supercell. A supercell is a rotating thunderstorm (called a mesocyclone). Supercells create
+                the deadliest tornadoes.<br>
+                <br>
+                The formation of a tornado is so complex, scientists have yet to understand it. The unpredictable and deadly nature of
+                tornadoes also makes them difficult to study. No matter what movies show, scientists have had little success measuring
+                or getting equipment into tornadoes. Not only is it dangerous, a tornado demolishes everything in its path, including
+                measuring equipment. So, speeds and other factors remain a mystery.<br>
+                <br>
+                The destruction caused by a tornado is undeniable and can be catastrophic. Though scientists will never be able to stop
+                a tornado, the more they know, the more they can keep people safe.</p>                
+            </div>
+        </div>
+        <div class="contact_info">            
+            <div class="info">
+                <h2>Contact Information</h2>
+                <ol>
+                <li><a href="https://goo.gl/maps/MSuwAmtcDsSuWrar9">Location</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">@e-mail</a></li>
+                <li><a href="https://www.facebook.com/"><img src="image/fb.png" alt="facebook"><img src="image/1025px-Instagram-Icon.png" alt="instagram"></a></li>
+                <!-- <li><a href="https://www.instagram.com/"><img src="image/1025px-Instagram-Icon.png" alt="instagram"></a></li> -->
+                </ol>
+            </div>
+            <div class="map"><img src="image/map.png" alt="preston-map"></div>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="year"></span>| Ryder Garache | Managua, Nicaragua | <a href="https://www.byui.edu/online">BYU-Idaho
+            Online Learning</a><br>
+        <span id="updated"></span>
+    </footer>
+    
+</body>
+
+</html>

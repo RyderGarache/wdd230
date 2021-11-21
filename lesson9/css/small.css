@@ -341,32 +341,32 @@ footer{
 
     /* Home page */
 
-    .cards body {
-        max-width: 1080px;
+    .sectioncontent{
+        max-width: 100%;
         margin: 0 auto;
-        background-color: hsl(244, 50%, 50%);
+        background-color: hsl(0, 0%, 96%);
     }
 
-    .cards img {
+    section img {
         width: 100%;
         height: 250px;
         padding: .2rem;        
         background-image: -webkit-gradient(gray);
     }
 
-    .cards h1 {
+    section h1 {
         font-size: xx-large;
         text-align: center;
         padding: 0;
         color: rgb(45, 26, 128);
     }
 
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr;
+    section {
+        display: block;
+        margin: 0;
     }
 
-    .cards section {
+    section {
         background-color: #77cde7ce;
         margin: 10px;
         justify-content: center;
@@ -375,14 +375,14 @@ footer{
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     }
 
-    .cards h2 {
+    section h2 {
         font-family: 'Merriweather', serif;
         text-align: center;
         font-size: large;
         padding: 0;
     }
 
-    .cards p {
+    section p {
         font-family: 'Montserrat', sans-serif;
         margin: 0;
         font-size: .75rem;

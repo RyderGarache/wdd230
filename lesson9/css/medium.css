@@ -137,6 +137,29 @@
         width: 70px;
         font-size: medium;
     }
+
+    /* homepage */
+
+    .sodasprings {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .fishhaven {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+
+    .preston {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
     
+    section img{
+        max-width: 70%;
+    }
 }
 
