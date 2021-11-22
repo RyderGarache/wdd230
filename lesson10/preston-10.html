@@ -17,24 +17,10 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <script defer src="js/script.js"></script>
-    <script defer src="js/windchill.js"></script>
-    <script defer src="js/lazy.js"></script>
+    
 </head>
 
 <body>
-    <div class="banner">
-        <div class="banner_content">
-            <div class=banner_text>
-                <strong>Reminder:</strong>"Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.       
-            </div>
-            <button class="banner_close" type="button">
-                <span class="material-icons">
-                    close
-                </span>
-            </button>
-        </div>
-    </div>
     <header>
         <a class="homeback" href=""><img class="logo" src="image/logo_climatime/logo_white_large.png"
                 alt="climatime logo"></a>
@@ -43,7 +29,7 @@
         <ul class="navigation">
             <li><a class="menu" href="#">Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a class="online" href="preston-7.html">Preston</a></li>
+            <li><a class="online" href="preston-10.html">Preston</a></li>
             <li><a href="">Soda Springs</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery-7.html">Gallery</a></li>
@@ -53,29 +39,50 @@
         <h2 class="preston">Preston Idaho</h2>
         <div class="herodiv">
             <picture>
-                <source media="(max-width: 480px)" srcset="image/topimage-400px.jpg">
-                <source media="(max-width: 720px)" srcset="image/topimage-600px.jpg">
+                <source media="(max-width: 320px)" srcset="image/topimage-400px.jpg">
+                <source media="(max-width: 600px)" srcset="image/topimage-600px.jpg">
                 <source media="(max-width: 1200px)" srcset="image/topimage-980px.jpg">
                 <img class="hero_img" src="image/topimage-980px.jpg" alt="Heroimg">   
             </picture>
             
             <section class="stats">
                 <h2>Weather Summary</h2>
-                <p>Currently: <span class="currentWeather"></span></p>
-                <p id="temp">Temperature: <span class="temp"></span></p>
-                <p>Humidity: <span class="humidity"></span> </p>
-                <p id="speed">Wind Speed: <span class="windSpeed"></span> </p>
+                <p>Currently: <span class="currently"></span></p>
+                <p>Temperature: <span class="temperature">°F</span></p>
+                <p>Humidity: <span class="humidity"></span>%</p>
+                <p>Wind Speed: <span class="speed"></span>mph</p>
                 <p>Wind Chil: <span class="windchill"></span></p>
             </section>
         </div>
+        
         <div class="forescast">
-            <h2>5 Day Forescast</h2>
+            <h2 class="fivedays">5 Day Forescast</h2>           
             <div class="grid_forescast">
-            <img class="first" src="image/sol.png" alt="sunny">
-            <img class="second" src="image/cloud.png" alt="cloud">
-            <img class="thirth" src="image/storn.png" alt="storn">
-            <img class="fourth" src="image/huracano.png" alt="huracano">
-            <img class="fifth" src="image/huracano.png" alt="huracano">
+                <div class="first">
+                    <span class="day1"></span>
+                    <img class="img1">
+                    <span class="temp1"></span>
+                </div>
+                <div class="second">
+                    <span class="day2"></span>
+                    <img class="img2">
+                    <span class="temp2"></span>
+                </div>
+                <div class="thirth">
+                    <span class="day3"></span>
+                    <img class="img3">
+                    <span class="temp3"></span>
+                </div>
+                <div class="fourth">
+                    <span class="day4"></span>
+                    <img class="img4">
+                    <span class="temp4"></span>
+                </div>
+                <div class="fifth">
+                    <span class="day5"></span>
+                    <img class="img5">
+                    <span class="temp5"></span>
+                </div>
             </div>
         </div>
         <div class="article">
@@ -120,6 +127,10 @@
             Online Learning</a><br>
         <span id="updated"></span>
     </footer>
+    <script defer src="js/preston.js"></script>
+    <script defer src="js/script.js"></script>
+    <!-- <script defer src="js/windchill.js"></script> -->
+    <script defer src="js/lazy.js"></script>
     
 </body>
 

@@ -2,56 +2,50 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&unit
 
 fetch(apiUrl)
 .then((response) => response.json())
-.then((jsObject) => {
-    //console.log(jsObject);
-    
-    //console.log(jsObject.city)
-    //console.log(jsObject.city.name);
-    const afternoon = jsObject.list.filter(time => time.dt_txt.includes('18:00:00'));
-    //console.log(afternoon);
-
-    const temp = document.querySelector('.temp');
-    const condition = document.querySelector('.currentWeather');
+.then((jsObject) => {   
+    const objectFilter = jsObject.list.filter(time => time.dt_txt.includes('18:00:00'));
+    const temperature = document.querySelector('.temperature');
+    const currently = document.querySelector('.currently');
     const humidity = document.querySelector('.humidity');
-    const windSpeed = document.querySelector('.windSpeed');
+    const windSpeed = document.querySelector('.speed');
+    const days = [
+          'Sunday', 
+          'Monday', 
+          'Tuesday', 
+          'Wednesday', 
+          'Thursday', 
+          'Friday', 
+          'Saturday']
+    var move = 1;
+    currently.innerHTML = objectFilter[0].weather[0].description;
+    temperature.innerHTML = `${objectFilter[0].main.temp.toFixed(0)}`;
+    humidity.innerHTML = `${objectFilter[0].main.humidity}`;
+    windSpeed.innerHTML = `${objectFilter[0].wind.speed}`;   
     
-    let tempA = afternoon[0].main.temp.toFixed(0);
-    let speed = afternoon[0].wind.speed;
-
-    condition.textContent = afternoon[0].weather[0].description;
-    temp.textContent = `${tempA}°F`;
-    humidity.textContent = `${afternoon[0].main.humidity}%`;
-    windSpeed.textContent = `${speed}mph`;
-    
-   
-    const dayOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    let day = 0;
-    afternoon.forEach(forecast =>{
-       let imagesrc = `../icon/${forecast.weather[0].icon}.png`; 
-        let description = forecast.weather[0].description;
-        //console.log(forecast.weather[0].icon);
-        let date = new Date(forecast.dt_txt);
-
-         /*for later editing
-         imagesrc;
-        if (description === 'few clouds'){
-          imagesrc = '../icon/fewclouds.png';
-        }
-        if (description === 'clear sky'){
-          imagesrc = '../icon/sunny.png';
-        }
-        if (description === 'broken clouds'){
-          imagesrc = '../icon/brokenclouds.png';
-        }
-        if (description === 'cloudy'){
-          imagesrc = '../icon/cloudy.png';
-        }*/
-
-
-        document.querySelector(`.day${day + 1}`).textContent = dayOfWeek[date.getDay()];
-        document.querySelector(`.temp${day + 1}`).textContent = forecast.main.temp + '°F';
-        document.querySelector(`#icon${day + 1}`).setAttribute('src', imagesrc);
-        document.querySelector(`#icon${day + 1}`).setAttribute('alt', description);
-        day++;
+    objectFilter.forEach(forecast =>{             
+      document.querySelector(`.day${move}`).textContent = days[new Date(forecast.dt_txt).getDay()];
+      document.querySelector(`.temp${move}`).textContent = forecast.main.temp + '°F';
+      document.querySelector(`.img${move}`).setAttribute('src', `icon/${forecast.weather[0].icon}.png`);
+      document.querySelector(`.img${move}`).setAttribute('alt', forecast.weather[0].description);
+      ++move;
         
     });
+});
+
+let regExp = /\d+/; 
+
+let string = document.querySelector('.speed').textContent;
+let Speed = string.match(regExp);
+
+let string2 = document.querySelector('.temperature').textContent;
+let Temp = string2.match(regExp);
+
+let WindChill =
+  35.75 +
+  0.6215 * Temp -
+  35.75 * Math.pow(Speed, 0.16) +
+  0.4275 * Temp * Math.pow(Speed, 0.16);
+
+if (Temp <= 50 && Speed > 3)
+  document.querySelector('.windchill').innerHTML = Math.round(WindChill) + " °F";
+else document.querySelector('.windchill').innerHTML = "not applicable";
