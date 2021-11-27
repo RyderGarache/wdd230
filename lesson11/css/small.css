@@ -370,6 +370,9 @@ textarea{
     margin-left:auto; 
     margin-right:auto;
 }
+picture p{
+    text-align: center;
+}
 
 
 /* Home page */
