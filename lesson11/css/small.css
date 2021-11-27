@@ -432,6 +432,35 @@ section p {
     padding: 15px;
 }
 
+.event{
+    margin: 5px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #A64F90;
+    border-radius: 15px;
+    width: 70%;
+    max-width: 100%;
+}
+.event h1{
+    font-size: xx-large;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+        
+}
+
+.home-who h1{
+    font-size: x-large;
+    text-align: center;
+}
+
+.home-who img{
+    
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
 @media only screen and (min-width: 500px) {
     .cards {
         grid-template-columns: 1fr 1fr;

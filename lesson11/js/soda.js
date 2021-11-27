@@ -49,3 +49,29 @@ let WindChill =
 if (Temp <= 50 && Speed > 3)
   document.querySelector('.windchill').innerHTML = Math.round(WindChill) + " °F";
 else document.querySelector('.windchill').innerHTML = "not applicable";
+
+// upcoming events
+const townURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+  const townEvent = document.querySelector('.event'); 
+
+  fetch(townURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      const towns = jsonObject['towns'];
+  
+      let h3 = document.createElement('h1');
+      h3.innerHTML = "Upcoming Events";
+      townEvent.appendChild(h3)
+      
+ 
+      const selectedTown = towns.filter((town) =>town.name === 'Soda Springs');
+      
+      selectedTown[0].events.forEach(items =>{
+        let lists = document.createElement('span');
+        lists.innerHTML = items; 
+        townEvent.appendChild(lists);
+    
+      })
+    });

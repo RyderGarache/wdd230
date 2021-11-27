@@ -252,5 +252,17 @@
     .prestonhome img {
         grid-area: img;
     }
+
+    .home-who h1 {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .home-who img {
+        float: right;
+        width: 350px;
+
+
+    }
 }
 
