@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ClimaTime Site of Ryder Garache for WDD 230: Web Frontend Develoment.">
+    <title>ClimaTime</title>
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner_content">
+            <div class=banner_text>
+                <strong>Reminder:</strong>"Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+                pavilion.
+            </div>
+            <button class="banner_close" type="button">
+                <span class="material-icons">
+                    close
+                </span>
+            </button>
+        </div>
+    </div>
+    <header>
+        <a class="homeback" href="preston.html"><img class="logo" src="image/logo_climatime/logo_white_large.png"
+                alt="climatime logo"></a>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a class="online" href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="preston">Preston Idaho</h2>
+        <div class="herodiv">
+            <picture>
+                <source media="(max-width: 320px)" srcset="image/topimage-400px.jpg">
+                <source media="(max-width: 600px)" srcset="image/topimage-600px.jpg">
+                <source media="(max-width: 1200px)" srcset="image/topimage-980px.jpg">
+                <img class="hero_img" src="image/topimage-980px.jpg" alt="Heroimg">   
+            </picture>
+            
+            <section class="stats">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span class="currently"></span></p>
+                <p>Temperature: <span class="temperature"></span></p>
+                <p>Humidity: <span class="humidity"></span>%</p>
+                <p>Wind Speed: <span class="speed"></span>mph</p>
+                <p>Wind Chil: <span class="windchill"></span></p>
+            </section>
+        </div>
+        
+        <div class="forescast">
+            <h2 class="fivedays">5 Day Forescast</h2>           
+            <div class="grid_forescast">
+                <div class="first">
+                    <span class="day1"></span>
+                    <img class="img1">
+                    <span class="temp1"></span>
+                </div>
+                <div class="second">
+                    <span class="day2"></span>
+                    <img class="img2">
+                    <span class="temp2"></span>
+                </div>
+                <div class="thirth">
+                    <span class="day3"></span>
+                    <img class="img3">
+                    <span class="temp3"></span>
+                </div>
+                <div class="fourth">
+                    <span class="day4"></span>
+                    <img class="img4">
+                    <span class="temp4"></span>
+                </div>
+                <div class="fifth">
+                    <span class="day5"></span>
+                    <img class="img5">
+                    <span class="temp5"></span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <h2 class="article_title">Geyser</h2>
+            <div class="tornado_grid">
+                <img class="tornado_img" src="image/Soda_Springs_Geyser.jfif" alt="tornado">                
+                <p>The city is named for the hundreds of natural springs of carbonated water that are located in and around the city. 
+                The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the middle 19th century. <br>
+                <br>
+                Today the city is also known as the location of the Soda Springs Geyser, which was unleashed in 1934 when "town fathers" were 
+                looking for hot water for a "hot pool" bathing attraction. Instead they drilled into a chamber of highly pressurized carbon dioxide
+                gas and cold water and the geyser was released.<br>
+                <br>
+                After running for weeks, and flooding the downtown area, it was capped and manually released when requested as a tourist 
+                attraction. Now it is let loose every hour on the hour by a timed release valve. Its height and volume have not decreased 
+                after many years. There are viewing platforms at either end of the travertine mound where the geyser erupts. Interpretive 
+                signs are located on the platforms explaining this phenomenon.<br>
+                <br>
+                Soda Springs is also the location of one of the Ground Observer Corps sites.</p>                
+            </div>
+        </div>
+                    
+        <div class="info">
+            <h2>Contact Information</h2>
+            <iframe src="https://maps.google.com/maps?q=soda%20springs%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>            
+            <p><a href="https://goo.gl/maps/MSuwAmtcDsSuWrar9">Location</a><br>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">@e-mail</a><br>
+            <a href="https://www.facebook.com/"><img src="image/fb.png" alt="facebook"><img src="image/1025px-Instagram-Icon.png" alt="instagram"></a></p>
+            
+            
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="year"></span>| Ryder Garache | Managua, Nicaragua | <a href="https://www.byui.edu/online">BYU-Idaho
+            Online Learning</a><br>
+        <span id="updated"></span>
+    </footer>
+    <script defer src="js/soda.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/lazy.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    
+</body>
+
+</html>

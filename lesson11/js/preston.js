@@ -46,3 +46,8 @@ let WindChill =
   35.75 * Math.pow(Speed, 0.16) +
   0.4275 * Temp * Math.pow(Speed, 0.16);
 
+
+if (Temp <= 50 && Speed > 3)
+  document.querySelector('.windchill').innerHTML = Math.round(WindChill) + " °F";
+else document.querySelector('.windchill').innerHTML = "not applicable";
+
