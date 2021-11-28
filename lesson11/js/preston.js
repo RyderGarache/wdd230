@@ -62,17 +62,16 @@ const townURL = "https://byui-cit230.github.io/weather/data/towndata.json"
     .then(function (jsonObject) {
       const towns = jsonObject['towns'];
   
-      let h3 = document.createElement('h1');
-      h3.innerHTML = "Upcoming Events";
-      townEvent.appendChild(h3)
-      
+      let title = document.createElement('h1');
+      title.innerHTML = "Upcoming Events";
+      townEvent.appendChild(title)      
  
       const selectedTown = towns.filter((town) =>town.name === 'Preston');
       
       selectedTown[0].events.forEach(items =>{
-        let lists = document.createElement('span');
-        lists.innerHTML = items; 
-        townEvent.appendChild(lists);
+        let event = document.createElement('span');
+        event.innerHTML = items; 
+        townEvent.appendChild(event);
     
       })
     });
