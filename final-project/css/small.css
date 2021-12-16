@@ -12,7 +12,7 @@ body {
 body {
     max-width: 1720px;
     margin: 2% auto;
-    background-color: #ffffff;
+    background-color: #cedbda;
 
 }
 
@@ -21,7 +21,7 @@ header {
     /* Establecemos que el header abarque el 100% del documento */
     overflow: hidden;
     /* Eliminamos errores de float */
-    background: #252932;
+    background: #3C474B;
     margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background: #f56f3a;
+    background: #C0E0DE;
     border-radius: 50px;
 }
 
@@ -78,7 +78,7 @@ footer {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     color: white;
-    background-color: #252932;
+    background-color: #3C474B;
     height: 80px;
     padding-top: 25px;
 }
@@ -96,60 +96,207 @@ footer {
 
 .bataholacham p{
     font-size: x-large;
+    margin: 20px;
 }
 
-.buss{
+.wrapper nav img{
+    width: 40px;
+}
+
+.grid_forescast {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    border-style: solid;
-    border-color: #f56f3a;
-    padding: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+    height: 120px;
+    background-color: rgb(87, 126, 161);
+    align-content: center;
+    font-size: small;
+    border-radius: 0 0 5px 5px;
 }
 
-.buss1{
+/*  */
+
+.first {
     grid-column: 1/2;
+    place-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.second {
+    grid-column: 2/3;
+    place-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.thirth {
+    grid-column: 3/4;
+    place-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fourth {
+    grid-column: 4/5;
+    place-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fifth {
+    grid-column: 5/6;
+    place-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fivedays {
+    text-align: center;
+    padding: 0;
+    background-color: #C0E0DE;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+iframe {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.gallery {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.weather img[data-src] {
+    filter: blur(.2em);
+    /* height: 270px;
+    width: max-content; */
+}
+
+.weather img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.hero_img{
     width: 100%;
 }
 
-.buss2{
-    grid-column: 2/3;
+.managua_img {
+    width: 100%;
+    height: auto;
 }
 
-.buss3{
-    grid-column: 3/4;
+.stats p {
+    line-height: 20px;
+    text-align: center;
+    font-size: large;
+
 }
 
-.buss img{
-    width: 300px;
-    height: 200px;
+.stats {
+    background-color: #4F7CAC
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    padding: 1rem;
+    background-color: #C0E0DE;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+label {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.title input,
+label select {
     display: block;
-    margin: auto;
-    border-style: solid;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: .4rem;
+    width: 100%;
+    max-width: 20rem;
 }
 
-.newevent{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.level {
+    padding: .5rem;
 }
 
-.news{
-    grid-column: 1/3;
+.submitbutton {
+    border-radius: 10px;
+    background-color: rgba(18, 205, 238, 0.911);
+    padding: .50rem;
+    justify-self: center;
+    width: 60px;
+    font-size: small;
+    margin: 10px auto 10px auto;
+    text-align: center;
+
+
 }
 
-.event{
-    grid-column: 3/4;
+label input:required {
+    border-right: red solid 2px;
 }
 
-.news{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+label input:required:valid {
+    border-left: green solid 2px;
 }
 
-.newevent img{
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin: auto;
-    border-style: solid;
+textarea {
+    height: 4.4em;
+    width: 100%;
+}
+
+.divbutton {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+picture p {
+    text-align: center;
 }
